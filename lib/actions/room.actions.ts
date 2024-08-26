@@ -1,9 +1,9 @@
-'use server' 
-import { nanoid } from 'nanoid'
-import { liveblocks } from '../liveblocks'
-import { revalidatePath } from 'next/cache'
-import { parseStringify } from '../utils'
+'use server'
 import { RoomAccesses } from '@liveblocks/node'
+import { nanoid } from 'nanoid'
+import { revalidatePath } from 'next/cache'
+import { liveblocks } from '../liveblocks'
+import { parseStringify } from '../utils'
 
 export const createDocument = async ({
 	userId,
