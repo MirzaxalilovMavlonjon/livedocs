@@ -6,9 +6,9 @@ import { redirect } from 'next/navigation'
 export async function POST(request: Request) {
 	const clerkUser = await currentUser()
 
+	if (!clerkUser) redirect('/sign-in')
 	const { id, firstName, lastName, emailAddresses, imageUrl } = clerkUser
 
-	if (!clerkUser) redirect('/sign-in')
 	// Get the current user from your database
 	const user = {
 		id,

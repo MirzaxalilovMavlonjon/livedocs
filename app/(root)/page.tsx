@@ -12,6 +12,10 @@ const Home = () => {
 					</SignedIn>
 				</div>
 			</Header>
+
+			<div>
+				
+			</div>
 		</main>
 	)
 }
